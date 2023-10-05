@@ -4,7 +4,7 @@ using System;
 class WritingAssignment : Assignment
 {
     private string _title = "";
-    private string _problems = "";
+
 
     public string GetTextbookSection()
     {
