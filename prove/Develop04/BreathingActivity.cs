@@ -1,5 +1,4 @@
 using System;
-
 public class BreathingActivity : Activity
 {
     //Attributes
@@ -33,7 +32,7 @@ public class BreathingActivity : Activity
             
 
         }
-        
+
         DisplayEndingMessage();
         ShowSpinner(5);
 
