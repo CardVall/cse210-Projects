@@ -1,0 +1,4 @@
+0
+Simple Goal,Simple Goal Test ,This is the description of Simple Goal Test,20,False
+Eternal Goal, Eternal Goal Test, This is the description of Eternal Goal Test, 10 
+Checklist Goal,Checklist Goal Test,This is the description of Checklist Goal Test,5,3,100,0
