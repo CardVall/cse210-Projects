@@ -3,16 +3,20 @@ using System;
 class RecipeManager
 {
     //Attributes
-    public List<RecipeItem> _recipies {get; set;}
+    public List<RecipeItem> _recipes {get; set;}
     //Constructors
     public RecipeManager()
     {
-
+        _recipes = new List<RecipeItem>();
     }
     //Methods
+    public List<Recipe> GetRecipesByName(IEnumerable<string> names)
+    {
+        return _recipes.OfType<Recipe>().Where(r => names.Contains(r.GetName())).ToList();
+    }
     public void AddRecipeItem(RecipeItem item)
     {
-        _recipies.Add(item);
+        _recipes.Add(item);
     }
     public void EditRecipeItem(RecipeItem item)
     {
@@ -20,7 +24,7 @@ class RecipeManager
     }
     public void DeleteRecipeItem(RecipeItem item)
     {
-        _recipies.Remove(item);
+        _recipes.Remove(item);
     }
     public void FilterByCategory(string _category)
     {

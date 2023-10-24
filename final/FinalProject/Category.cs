@@ -12,10 +12,10 @@ public class Category : RecipeItem
     //Methods
     public void AddRecipe(Recipe recipe)
     {
-        _recipies.Add(recipe);
+        _recipes.Add(recipe);
     }
     public void RemoveRecipe(Recipe recipe)
     {
-        _recipies.Remove(recipe);
+        _recipes.Remove(recipe);
     }
 }
